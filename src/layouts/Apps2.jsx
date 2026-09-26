@@ -7,6 +7,7 @@ import Pagination from '../components/Pagination';
 import styles from '../styles/apps.module.css';
 import theme from '../styles/theming.module.css';
 import clsx from 'clsx';
+import { resolveAsset } from '../utils/resolveAsset';
 
 const AppCard = memo(({ app, onClick, fallbackMap, onImgError, itemTheme, itemStyles }) => {
   const [loaded, setLoaded] = useState(false);
@@ -31,7 +32,7 @@ const AppCard = memo(({ app, onClick, fallbackMap, onImgError, itemTheme, itemSt
           <LayoutGrid className="w-full h-full" />
         ) : (
           <img
-            src={app.icon}
+            src={resolveAsset(app.icon)}
             draggable="false"
             loading="lazy"
             className="w-full h-full object-cover"
