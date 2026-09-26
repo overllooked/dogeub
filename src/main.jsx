@@ -9,11 +9,14 @@ typeof window != 'undefined' &&
     ? requestIdleCallback(() => ReactGA.initialize('G-HWLK0PZVBM'))
     : setTimeout(() => ReactGA.initialize('G-HWLK0PZVBM'), 0));
 
+const base = import.meta.env.BASE_URL;
+const basename = base === '/' ? undefined : base.replace(/\/$/, '');
+
 const root = createRoot(document.getElementById('root'));
 
 startTransition(() => {
   root.render(
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter basename={basename}>
       <App />
     </BrowserRouter>,
   );
