@@ -1,7 +1,7 @@
 import theming from '/src/styles/theming.module.css';
 import clsx from 'clsx';
 import { useOptions } from '/src/utils/optionsContext';
-import { resolveAsset } from '/src/utils/resolveAsset';
+import { resolveAsset } from '/src/resolveAsset.js';
 
 const InfoCard = ({ app, theme }) => {
   const { options } = useOptions();
