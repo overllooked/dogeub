@@ -5,7 +5,7 @@ import { Plus, Bolt, Globe, Pencil, Trash2, CircleX } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import LinkDialog from './NewQuickLink';
 import EditLinkDialog from './EditQuickLink';
-import { resolveAsset } from '/src/utils/resolveAsset.js';
+import { resolveAsset } from '/src/resolveAsset.js';
 
 const QuickLinks = ({ cls, nav = true, navigating }) => {
   const { options, updateOption } = useOptions();
