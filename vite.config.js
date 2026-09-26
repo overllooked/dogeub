@@ -152,7 +152,15 @@ export default defineConfig(({ command }) => {
             return null;
           }
 
-          return remoteApps();
+          try {
+            return await remoteApps();
+          } catch (e) {
+            console.warn(
+              '[remote-apps-json] Remote apps.json fetch failed, falling back to local src/data/apps.json:',
+              e?.message || e,
+            );
+            return null; // fall through to Vite's default loader (reads the file from disk)
+          }
         },
       },
 
