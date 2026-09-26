@@ -82,7 +82,7 @@ export default defineConfig(({ command }) => {
   const environment = command === 'serve' ? 'dev' : 'stable';
 
   return {
-    base: '/',
+    base: process.env.BASE_PATH || '/',
     plugins: [
       react(),
       vitePluginBundleObfuscator(obf),
