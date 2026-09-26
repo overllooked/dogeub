@@ -26,7 +26,7 @@ const Logo = memo(({ options, action, width, height }) => {
 
   return (
     <img
-      src="/logo.png"
+      src={`${import.meta.env.BASE_URL}logo.png`}
       className={className}
       id="btn-logo"
       draggable="false"
