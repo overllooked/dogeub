@@ -5,7 +5,7 @@ import { Plus, Bolt, Globe, Pencil, Trash2, CircleX } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import LinkDialog from './NewQuickLink';
 import EditLinkDialog from './EditQuickLink';
-import { resolveAsset } from '/src/utils/resolveAsset';
+import { resolveAsset } from '/src/utils/resolveAsset.js';
 
 const QuickLinks = ({ cls, nav = true, navigating }) => {
   const { options, updateOption } = useOptions();
@@ -18,8 +18,8 @@ const QuickLinks = ({ cls, nav = true, navigating }) => {
 
   const defaultLinks = [
     { link: 'https://google.com', icon: 'https://google.com/favicon.ico', name: 'Google' },
-    { link: 'https://cineby.gd', icon: resolveAsset('/assets/img/fyhn.ico'), name: 'Movies' },
-    { link: 'https://discord.com', icon: resolveAsset('/assets/img/dsci.ico'), name: 'Discord' },
+    { link: 'https://cineby.rocks', icon: resolveAsset('/assets/img/fyhn.ico'), name: 'Movies' },
+    { link: 'https://discord.com/channels/@me', icon: resolveAsset('/assets/img/dsci.ico'), name: 'Discord' },
     { link: 'https://github.com', icon: resolveAsset('/assets/img/icogh.ico'), name: 'GitHub' },
   ];
 
