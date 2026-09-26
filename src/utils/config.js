@@ -2,6 +2,37 @@ import pkg from '../../package.json';
 
 export const themeConfig = [
   {
+    option: 'Default',
+    value: {
+      theme: 'charcoal',
+      type: 'dark',
+      settingsContainerColor: '#252525',
+      navItemActive: '#f3f4f6',
+      settingsSearchBar: '#1a1a1a',
+      settingsPanelItemBackgroundColor: '#2e2e2e',
+      settingsDropdownColor: '#101010',
+      siteTextColor: '#d4d4d4',
+      bgDesignColor: '37, 37, 37',
+      glowWrapperColor: '255, 255, 255',
+      switchColor: '#1f1f1f',
+      switchEnabledColor: '#3b3b3b',
+      bgColor: '#050505',
+      quickModalBgColor: '#1c1c1c',
+      paginationTextColor: '#c9c9c9',
+      paginationBorderColor: '#ffffff1c',
+      paginationBgColor: '#101010',
+      paginationSelectedColor: '#858585',
+      themeName: 'charcoalTheme',
+      /* loader */
+      tabColor: "#141414",
+      tabOutline: "#2a2a2a",
+      barColor: "#0a0a0a",
+      tabBarColor: "#050505",
+      omninputColor: "#0505058f",
+      menuColor: "#161616"
+    },
+  },
+  {
     option: 'Midnight',
     value: {
       theme: 'default',
@@ -251,6 +282,99 @@ export const themeConfig = [
       menuColor: "#fff"
     },
   },
+  {
+    option: 'Ocean',
+    value: {
+      theme: 'ocean',
+      type: 'dark',
+      settingsContainerColor: '#0f2027',
+      navItemActive: '#a8e6ff',
+      settingsSearchBar: '#16313d',
+      settingsPanelItemBackgroundColor: '#1e4451',
+      settingsDropdownColor: '#0c1f26',
+      siteTextColor: '#b8dce8',
+      bgDesignColor: '46, 108, 130',
+      glowWrapperColor: '168, 230, 255',
+      switchColor: '#1c3a44',
+      switchEnabledColor: '#2f7a91',
+      bgColor: '#081419',
+      quickModalBgColor: '#14313a',
+      paginationTextColor: '#b3d9e6',
+      paginationBorderColor: '#ffffff1c',
+      paginationBgColor: '#102730',
+      paginationSelectedColor: '#57a9c2',
+      themeName: 'oceanTheme',
+      /* loader */
+      tabColor: "#0e2129",
+      tabOutline: "#284b56",
+      barColor: "#0a191f",
+      tabBarColor: "#061318",
+      omninputColor: "#0810138f",
+      menuColor: "#122a32"
+    },
+  },
+  {
+    option: 'Sunset',
+    value: {
+      theme: 'sunset',
+      type: 'dark',
+      settingsContainerColor: '#2b1a1f',
+      navItemActive: '#ffd6a5',
+      settingsSearchBar: '#3a2226',
+      settingsPanelItemBackgroundColor: '#4a2a2c',
+      settingsDropdownColor: '#231317',
+      siteTextColor: '#e8c4b8',
+      bgDesignColor: '198, 93, 61',
+      glowWrapperColor: '255, 158, 100',
+      switchColor: '#3d262a',
+      switchEnabledColor: '#c6653d',
+      bgColor: '#160d0f',
+      quickModalBgColor: '#33201f',
+      paginationTextColor: '#e0b8ac',
+      paginationBorderColor: '#ffffff1c',
+      paginationBgColor: '#241715',
+      paginationSelectedColor: '#d47c53',
+      themeName: 'sunsetTheme',
+      /* loader */
+      tabColor: "#2a1a1a",
+      tabOutline: "#4a2f2a",
+      barColor: "#1f1212",
+      tabBarColor: "#130a0a",
+      omninputColor: "#1409098f",
+      menuColor: "#2c1a1a"
+    },
+  },
+  {
+    option: 'Slate',
+    value: {
+      theme: 'slate',
+      type: 'light',
+      settingsContainerColor: '#dde1e7',
+      navItemActive: '#1e293b',
+      settingsSearchBar: '#e2e6ec',
+      settingsPanelItemBackgroundColor: '#e2e6ec',
+      settingsDropdownColor: '#f8fafc',
+      siteTextColor: '#334155',
+      bgDesignColor: '148, 163, 184',
+      glowWrapperColor: '30, 41, 59',
+      switchColor: '#c6cdd6',
+      switchEnabledColor: '#64748b',
+      bgColor: '#f1f5f9',
+      quickModalBgColor: '#e9edf2',
+      paginationTextColor: '#475569',
+      paginationBorderColor: '#94a3b870',
+      paginationBgColor: '#ffffff',
+      paginationSelectedColor: '#64748bb8',
+      themeName: 'slateTheme',
+      /* loader */
+      tabColor: "#ffffff",
+      tabOutline: "#b0b8c1",
+      barColor: "#ffffff",
+      tabBarColor: "#cbd2da",
+      omninputColor: "#c2c8ce8f",
+      menuColor: "#fff"
+    },
+  },
 ];
 
 export const meta = [
@@ -258,7 +382,7 @@ export const meta = [
     option: 'Default',
     value: {
       tabName: `v5-${__ENVIRONMENT__}-${pkg.version}`,
-      tabIcon: './icon.png',
+      tabIcon: `${import.meta.env.BASE_URL}icon.png`,
     },
   },
   {
