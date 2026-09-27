@@ -155,6 +155,142 @@
   --item-border: #e6dec7;
 }
 
+.theme-onyx {
+  --nav-bg: #000000cc;
+  --nav-border: #242424c5;
+  --search-border: #2b2b2b;
+  --search-bg: #121212;
+  --search-ph: #9a9a9a;
+  --search-color: #f0f0f0;
+  --settings-panel: #0f0f0f;
+  --settings-border: #242424;
+  --apps-bg: #121212;
+  --apps-border: #242424;
+  --apps-text: #f0f0f0;
+  --apps-ph: #9a9a9a;
+  --item-bg: #141414;
+  --item-border: #2b2b2b;
+}
+
+.theme-ivory {
+  --nav-bg: #fffdf7e6;
+  --nav-border: #ece5d4;
+  --search-border: #ddd4bf;
+  --search-bg: #fffdf7;
+  --search-ph: #5a5344;
+  --search-color: #2b2620;
+  --settings-panel: #f5f1e8;
+  --settings-border: #ece5d4;
+  --apps-bg: #fffcf4;
+  --apps-border: #ece5d4;
+  --apps-text: #2b2620;
+  --apps-ph: #5a5344;
+  --item-bg: #fffdf7;
+  --item-border: #ddd4bf;
+}
+
+.theme-charcoal {
+  --nav-bg: #050505cc;
+  --nav-border: #2e2e2e;
+  --search-border: #333333;
+  --search-bg: #1a1a1a;
+  --search-ph: #a3a3a3;
+  --search-color: #ecf6ff;
+  --settings-panel: #101010;
+  --settings-border: #2e2e2e;
+  --apps-bg: #1a1a1a;
+  --apps-border: #2e2e2e;
+  --apps-text: #f4f4f4;
+  --apps-ph: #a3a3a3;
+  --item-bg: #1c1c1c;
+  --item-border: #333333;
+}
+
+.theme-ocean {
+  --nav-bg: #081419cc;
+  --nav-border: #1e4451c5;
+  --search-border: #245361;
+  --search-bg: #0f2530;
+  --search-ph: #7fb2c4;
+  --search-color: #d6f2ff;
+  --settings-panel: #0c1f26;
+  --settings-border: #1e4451;
+  --apps-bg: #0f2530;
+  --apps-border: #1e4451;
+  --apps-text: #d6f2ff;
+  --apps-ph: #7fb2c4;
+  --item-bg: #102730;
+  --item-border: #245361;
+}
+
+.theme-sunset {
+  --nav-bg: #160d0fcc;
+  --nav-border: #4a2a2cc5;
+  --search-border: #4a2a2c;
+  --search-bg: #241517;
+  --search-ph: #d6a08c;
+  --search-color: #ffe4d6;
+  --settings-panel: #231317;
+  --settings-border: #4a2a2c;
+  --apps-bg: #241715;
+  --apps-border: #4a2a2c;
+  --apps-text: #ffe4d6;
+  --apps-ph: #d6a08c;
+  --item-bg: #241715;
+  --item-border: #4a2a2c;
+}
+
+.theme-slate {
+  --nav-bg: #f1f5f9e6;
+  --nav-border: #cbd5e1;
+  --search-border: #cbd5e1;
+  --search-bg: #ffffff;
+  --search-ph: #475569;
+  --search-color: #1e293b;
+  --settings-panel: #f8fafc;
+  --settings-border: #e2e6ec;
+  --apps-bg: #ffffffb3;
+  --apps-border: #cbd5e1;
+  --apps-text: #1e293b;
+  --apps-ph: #475569;
+  --item-bg: #ffffff;
+  --item-border: #cbd5e1;
+}
+
+.theme-crimson {
+  --nav-bg: #150607cc;
+  --nav-border: #3a1116c5;
+  --search-border: #4a151b;
+  --search-bg: #200a0c;
+  --search-ph: #c98a90;
+  --search-color: #ffe0e2;
+  --settings-panel: #180809;
+  --settings-border: #3a1116;
+  --apps-bg: #200a0c;
+  --apps-border: #3a1116;
+  --apps-text: #ffe0e2;
+  --apps-ph: #c98a90;
+  --item-bg: #220b0d;
+  --item-border: #4a151b;
+}
+
+.theme-mint {
+  --nav-bg: #f4fbf7e6;
+  --nav-border: #d3ede0;
+  --search-border: #c1e6d3;
+  --search-bg: #ffffff;
+  --search-ph: #4c7a63;
+  --search-color: #123425;
+  --settings-panel: #edf9f2;
+  --settings-border: #d3ede0;
+  --apps-bg: #ffffffb3;
+  --apps-border: #d3ede0;
+  --apps-text: #123425;
+  --apps-ph: #4c7a63;
+  --item-bg: #ffffff;
+  --item-border: #c1e6d3;
+}
+
 .nav-backgroundColor {
   background-color: var(--nav-bg);
   border-bottom: 1px solid var(--nav-border);
