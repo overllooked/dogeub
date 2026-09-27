@@ -2,23 +2,21 @@ import clsx from 'clsx';
 import { useState, useMemo, useCallback, useEffect } from 'react';
 import Nav from '../layouts/Nav';
 import theme from '../styles/theming.module.css';
-import { Search } from 'lucide-react';
+import { Search, HatGlasses, Palette, Globe, Wrench } from 'lucide-react';
 import { useOptions } from '/src/utils/optionsContext';
 import RenderSetting from '../components/Settings';
-
-const settingsIcon = (file) => `${import.meta.env.BASE_URL}settings/${file}`;
 
 let asyncConfs = [];
 const baseConfigs = [
   {
     name: 'Privacy',
-    icon: settingsIcon('privacy.png'),
+    icon: HatGlasses,
     keywords: ['title', 'cloak', 'cloaking', 'tab cloak', 'about', 'about:blank', 'blank'],
     key: 'privacyConfig',
   },
   {
     name: 'Customize',
-    icon: settingsIcon('customize.png'),
+    icon: Palette,
     keywords: [
       'theme',
       'color',
@@ -43,13 +41,13 @@ const baseConfigs = [
   },
   {
     name: 'Browsing',
-    icon: settingsIcon('browsing.png'),
+    icon: Globe,
     keywords: ['tabs', 'tab', 'type', 'search engine',],
     key: 'browsingConfig',
   },
   {
     name: 'Advanced',
-    icon: settingsIcon('advanced.png'),
+    icon: Wrench,
     keywords: [
       'wisp',
       'type',
@@ -167,7 +165,7 @@ const Settings = () => {
           )}
 
           <div className="flex flex-col gap-3 mt-5">
-            {filtered.map(({ name, icon, items }) => {
+            {filtered.map(({ name, icon: Icon, items }) => {
               const matched = fq ? items.filter((i) => i.name.toLowerCase().includes(fq)) : [];
               return (
                 <div
@@ -185,7 +183,7 @@ const Settings = () => {
                   onClick={() => setContent((prev) => (prev === name ? '' : name))}
                 >
                   <div className="flex items-center h-6">
-                    <img src={icon} alt="" className="w-5 h-5 object-contain" />
+                    <Icon className="w-5" />
                     <p className="mx-4">{name}</p>
                   </div>
                   {matched.length > 0 && (
