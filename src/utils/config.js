@@ -381,7 +381,7 @@ export const meta = [
   {
     option: 'Default',
     value: {
-      tabName: `v5-${__ENVIRONMENT__}-${pkg.version}`,
+      tabName: `Dovin`,
       tabIcon: `${import.meta.env.BASE_URL}icon.png`,
     },
   },
