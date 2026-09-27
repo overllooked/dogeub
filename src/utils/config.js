@@ -165,4 +165,86 @@ export const themeConfig = [
       bgDesignColor: '127, 127, 127',
       glowWrapperColor: '136, 169, 255',
       switchColor: '#25273a',
-      switchEnabledColor:
+      switchEnabledColor: '#5b6eff',
+      bgColor: '#0b0c14',
+      quickModalBgColor: '#181a28',
+      paginationTextColor: '#c9cdf0',
+      paginationBorderColor: '#ffffff1c',
+      paginationBgColor: '#141620',
+      paginationSelectedColor: '#8f9bd6',
+      themeName: 'stellarTheme',
+      tabColor: "#141620",
+      tabOutline: "#2b2e44",
+      barColor: "#0f1119",
+      tabBarColor: "#0b0c14",
+      omninputColor: "#0b0c148f",
+      menuColor: "#161927"
+    },
+  },
+];
+
+export const meta = [
+  {
+    option: 'Default',
+    value: { tabName: 'DogeUB', tabIcon: '/favicon.ico' },
+  },
+  {
+    option: 'Blank',
+    value: { tabName: 'New Tab', tabIcon: '' },
+  },
+];
+
+export const appsPerPageConfig = [
+  { option: '10', value: { itemsPerPage: 10 } },
+  { option: '15', value: { itemsPerPage: 15 } },
+  { option: '20', value: { itemsPerPage: 20 } },
+  { option: '30', value: { itemsPerPage: 30 } },
+  { option: 'All', value: { itemsPerPage: Infinity } },
+];
+
+export const navScaleConfig = [
+  { option: '0.8x', value: { navScale: 0.8 } },
+  { option: '0.9x', value: { navScale: 0.9 } },
+  { option: '0.95x', value: { navScale: 0.95 } },
+  { option: '1x (Default)', value: { navScale: 1 } },
+  { option: '1.1x', value: { navScale: 1.1 } },
+  { option: '1.2x', value: { navScale: 1.2 } },
+];
+
+export const searchConfig = [
+  { option: 'Google', value: { engine: 'https://www.google.com/search?q=' } },
+  { option: 'Bing', value: { engine: 'https://www.bing.com/search?q=' } },
+  { option: 'DuckDuckGo', value: { engine: 'https://duckduckgo.com/?q=' } },
+  { option: 'Brave', value: { engine: 'https://search.brave.com/search?q=' } },
+];
+
+export const prConfig = [
+  { option: 'Automatic', value: { prType: 'auto' } },
+  { option: 'Ultraviolet', value: { prType: 'uv' } },
+  { option: 'Scramjet', value: { prType: 'scr' } },
+];
+
+export const designConfig = [
+  {
+    option: 'None',
+    value: {
+      bgDesign: 'None',
+      getCSS: () => 'none',
+    },
+  },
+  {
+    option: 'Grid',
+    value: {
+      bgDesign: 'Grid',
+      getCSS: (c) =>
+        `linear-gradient(rgba(${c}, 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(${c}, 0.15) 1px, transparent 1px)`,
+    },
+  },
+  {
+    option: 'Dots',
+    value: {
+      bgDesign: 'Dots',
+      getCSS: (c) => `radial-gradient(rgba(${c}, 0.3) 1px, transparent 1px)`,
+    },
+  },
+];
